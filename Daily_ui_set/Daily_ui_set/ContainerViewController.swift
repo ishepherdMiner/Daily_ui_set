@@ -35,8 +35,6 @@ class ContainerViewController: UIViewController {
             let _ = sView?.perform(NSSelectorFromString(action), with: nil)
         }
     
-        let btn = sView as! JACountButton
-        btn.start(completed: nil)
     }
 
     override func didReceiveMemoryWarning() {
