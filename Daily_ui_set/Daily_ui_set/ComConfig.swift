@@ -22,7 +22,7 @@ class ComConfig: NSObject {
                 "view":"JACountButton",
                 "frame":"100,100,100,30",
                 "launch":"startWithCompleted:",
-                "bgcolor":"ffe8d0"
+                "bgcolor":"ff6677"
             ]
         ]
     }()
