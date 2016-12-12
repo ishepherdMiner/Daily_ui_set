@@ -23,11 +23,24 @@ class ContainerViewController: UIViewController {
         }
         sView?.frame = CGRect(x: frames[0], y: frames[1], width: frames[2], height: frames[3])
         view.addSubview(sView!)
+        
+        if let rgbValue = ComConfig.shared.dataList[orderId!]["bgcolor"] {
+            sView?.backgroundColor = UIColor.color(hexVal: Int(rgbValue,radix:16)!)
+        }else {
+            sView?.backgroundColor = UIColor.clear
+        }
+        
+        
+        if let action = ComConfig.shared.dataList[orderId!]["launch"] {
+            let _ = sView?.perform(NSSelectorFromString(action), with: nil)
+        }
+    
+        let btn = sView as! JACountButton
+        btn.start(completed: nil)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 }

@@ -42,7 +42,6 @@ class JAMarkView: UIView {
     
         let context:CGContext =  UIGraphicsGetCurrentContext()!;
         
-        // 抗锯齿设置
         context.setAllowsAntialiasing(true)
         context.setFillColor(bgColor!.cgColor)
         context.beginPath()

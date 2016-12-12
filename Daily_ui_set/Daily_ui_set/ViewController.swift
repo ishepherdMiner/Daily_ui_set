@@ -44,7 +44,6 @@ extension ViewController : UITableViewDelegate {
         // http://stackoverflow.com/questions/24030814/swift-language-nsclassfromstring/32265287#32265287
         let vc = ContainerViewController()
         vc.title = (ComConfig.shared.dataList[indexPath.row]["name"])
-        print(NSStringFromClass(JAMarkView.self))
         let vClsString = ComConfig.shared.moduleName + "." + (ComConfig.shared.dataList[indexPath.row]["view"])! as String
         let v = (NSClassFromString(vClsString) as? UIView.Type)?.init()
         vc.sView = v

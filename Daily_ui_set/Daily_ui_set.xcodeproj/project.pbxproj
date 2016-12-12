@@ -17,6 +17,7 @@
 		965B2EF21DF8629700940497 /* JAMarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965B2EF11DF8629700940497 /* JAMarkView.swift */; };
 		96669FBC1DFD93C50099502C /* ComConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96669FBB1DFD93C50099502C /* ComConfig.swift */; };
 		96669FBE1DFD943B0099502C /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96669FBD1DFD943B0099502C /* ContainerViewController.swift */; };
+		96669FC01DFDB0A50099502C /* JACountButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96669FBF1DFDB0A50099502C /* JACountButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		965B2EF11DF8629700940497 /* JAMarkView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JAMarkView.swift; sourceTree = "<group>"; };
 		96669FBB1DFD93C50099502C /* ComConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComConfig.swift; sourceTree = "<group>"; };
 		96669FBD1DFD943B0099502C /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		96669FBF1DFDB0A50099502C /* JACountButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JACountButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				965B2EF11DF8629700940497 /* JAMarkView.swift */,
+				96669FBF1DFDB0A50099502C /* JACountButton.swift */,
 			);
 			path = Kit;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				96669FBE1DFD943B0099502C /* ContainerViewController.swift in Sources */,
 				965B2EF21DF8629700940497 /* JAMarkView.swift in Sources */,
 				96669FBC1DFD93C50099502C /* ComConfig.swift in Sources */,
+				96669FC01DFDB0A50099502C /* JACountButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
