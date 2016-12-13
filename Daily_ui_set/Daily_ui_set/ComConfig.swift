@@ -21,7 +21,7 @@ class ComConfig: NSObject {
                 "name":"倒计时",
                 "view":"JACountButton",
                 "frame":"100,100,100,30",
-                "launch":"startWithCompleted:",
+                "launch":"fireWithCompleted:",
                 "bgcolor":"ff6677"
             ]
         ]

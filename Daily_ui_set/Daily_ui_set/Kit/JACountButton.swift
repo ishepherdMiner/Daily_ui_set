@@ -12,14 +12,14 @@ class JACountButton: UIButton {
     
     @IBInspectable open var cycle : Int? = 20
     
-    public var prompt_default : String = "发送验证码"
-    public var prompt_before : String = "倒计时("
-    public var prompt_after : String = ")"
+    public var promptDefault : String = "发送验证码"
+    public var promptLeft    : String = "倒计时("
+    public var promptRight   : String = ")"
     
     private var timer : Timer?
     private var callback : ((Bool)->())?
-        
-    public func start(completed:((Bool)->())?){
+    
+    public func fire(completed:((Bool)->())?){
         if timer == nil {
             callback = completed
             isEnabled = false
@@ -28,17 +28,17 @@ class JACountButton: UIButton {
         }
     }
     
-    public func stop() {
+    public func invalidate() {
         timer?.invalidate()
         timer = nil
     }
     
     @objc private func exec() {
-        setTitle(prompt_before + String(cycle!) + prompt_after, for: .disabled)
+        setTitle(promptLeft + String(cycle!) + promptRight, for: .disabled)
         if cycle == 0 {
             isEnabled = true
-            setTitle(prompt_default, for: .normal)
-            stop()
+            setTitle(promptDefault, for: .normal)
+            invalidate()
             if callback != nil {
                 callback!(true)
             }
@@ -51,13 +51,13 @@ class JACountButton: UIButton {
     override func willMove(toSuperview newSuperview: UIView?) {
         super.willMove(toSuperview: newSuperview)
         if newSuperview == nil {
-            stop()
+            invalidate()
         }
     }
     
     deinit {
         if timer != nil {
-            stop()
+            invalidate()
         }
     }
 }
