@@ -24,13 +24,16 @@ class JACountButton: UIButton {
             callback = completed
             isEnabled = false
             timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(exec), userInfo: nil, repeats: true)
+            RunLoop.current.add(timer!, forMode: .commonModes)
             timer?.fire()
         }
     }
     
     public func invalidate() {
-        timer?.invalidate()
-        timer = nil
+        if let _ = timer {
+            timer?.invalidate()
+            timer = nil
+        }
     }
     
     @objc private func exec() {

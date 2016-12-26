@@ -32,9 +32,13 @@ extension ViewController : UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: ComConfig.shared.moduleName)
-        cell.textLabel?.text = ComConfig.shared.dataList[indexPath.row]["name"]
-        return cell
+        
+        var cell = tableView.dequeueReusableCell(withIdentifier: ComConfig.shared.moduleName)
+        if let _ = cell {
+            cell = UITableViewCell(style: .default, reuseIdentifier: ComConfig.shared.moduleName)
+        }
+        cell?.textLabel?.text = ComConfig.shared.dataList[indexPath.row]["name"]
+        return cell!
     }
 }
 

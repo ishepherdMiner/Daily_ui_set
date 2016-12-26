@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		963A7E701DFF93DE002C9202 /* JABeatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963A7E6F1DFF93DE002C9202 /* JABeatView.swift */; };
 		965B2EC31DF860F200940497 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965B2EC21DF860F200940497 /* AppDelegate.swift */; };
 		965B2EC51DF860F200940497 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965B2EC41DF860F200940497 /* ViewController.swift */; };
 		965B2EC81DF860F200940497 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 965B2EC61DF860F200940497 /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		963A7E6F1DFF93DE002C9202 /* JABeatView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JABeatView.swift; sourceTree = "<group>"; };
 		965B2EBF1DF860F200940497 /* Daily_ui_set.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Daily_ui_set.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		965B2EC21DF860F200940497 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		965B2EC41DF860F200940497 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 			children = (
 				965B2EF11DF8629700940497 /* JAMarkView.swift */,
 				96669FBF1DFDB0A50099502C /* JACountButton.swift */,
+				963A7E6F1DFF93DE002C9202 /* JABeatView.swift */,
 			);
 			path = Kit;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				965B2EC31DF860F200940497 /* AppDelegate.swift in Sources */,
 				96669FBE1DFD943B0099502C /* ContainerViewController.swift in Sources */,
 				965B2EF21DF8629700940497 /* JAMarkView.swift in Sources */,
+				963A7E701DFF93DE002C9202 /* JABeatView.swift in Sources */,
 				96669FBC1DFD93C50099502C /* ComConfig.swift in Sources */,
 				96669FC01DFDB0A50099502C /* JACountButton.swift in Sources */,
 			);
